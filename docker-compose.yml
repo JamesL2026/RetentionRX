@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  retention-rx:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./sample_data.csv:/app/sample_data.csv
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    restart: unless-stopped
