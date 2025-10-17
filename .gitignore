@@ -19,52 +19,38 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # Virtual environments
-venv/
+.env
+.venv
 env/
+venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
 # OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-
-# Streamlit
-.streamlit/
-
-# Environment variables
-.env
-.env.local
-.env.production
 
 # Logs
 *.log
-logs/
 
 # Temporary files
 *.tmp
 *.temp
-
-# Firebase
-.firebase/
-firebase-debug.log
-firebase-debug.*.log
-
-# Node modules (if using Firebase hosting)
-node_modules/
-package-lock.json
